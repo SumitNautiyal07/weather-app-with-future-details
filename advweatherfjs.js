@@ -12,7 +12,7 @@ const location_not_found = document.querySelector(".location-not-found");
 const weather_body = document.querySelector(".weather-body");
 
 async function checkWeather(city) {
-  const api_key = "861544b0c5d776adac869dbf8619f2ff";
+  const api_key = "your open-weather here!!!!!";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
 
   const weather_data = await fetch(`${url}`).then((response) =>
@@ -121,7 +121,7 @@ function futureforecastdetails(
 }
 
 async function futureforecast(city) {
-  const api_key = "861544b0c5d776adac869dbf8619f2ff";
+  const api_key = "your open-weather api here!!!!!!";
   const futureurl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api_key}`;
   const future_weather_data = await fetch(`${futureurl}`).then((response) =>
     response.json()
